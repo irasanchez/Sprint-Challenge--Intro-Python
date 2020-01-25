@@ -32,7 +32,13 @@ def cityreader(cities=[]):
     # TODO Implement the functionality to read from the 'cities.csv' file
     # For each city record, create a new City instance and add it to the
     # `cities` list
-
+    with open("C:/Users/irads/Desktop/LS/Sprint-Challenge--Intro-Python/src/cityreader/cities.csv", newline="") as file_to_read:
+        file_to_print = csv.reader(file_to_read)
+        for row in file_to_print:
+            if row[0] == "city":
+                pass
+            else:
+                cities.append(City(row[0], float(row[3]), float(row[4])))
     return cities
 
 
