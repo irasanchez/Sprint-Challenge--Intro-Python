@@ -1,13 +1,15 @@
-# To the GroundVehicle class, add method drive() that returns "vroooom".
-#
-# Also change it so the num_wheels defaults to 4 if not specified when the
+
+# num_wheels defaults to 4 if not specified when the
 # object is constructed.
 
+
 class GroundVehicle():
-    def __init__(self, num_wheels):
+    def __init__(self, num_wheels=4):
         self.num_wheels = num_wheels
 
-    # TODO
+    # add methid drive() that returns "vroooom"
+    def drive(self):
+        return "vroooom"
 
 
 # Subclass Motorcycle from GroundVehicle.
