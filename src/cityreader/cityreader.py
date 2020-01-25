@@ -50,6 +50,9 @@ for c in cities:
 
 # STRETCH GOAL!
 #
+
+# if the length is not 2, ask the user to do it again
+
 # Allow the user to input two points, each specified by latitude and longitude.
 # These points form the corners of a lat/lon square. Pass these latitude and
 # longitude values as parameters to the `cityreader_stretch` function, along
